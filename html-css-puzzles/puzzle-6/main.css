@@ -1,0 +1,44 @@
+
+/* Your styles go here */
+ body {
+ 	  font-family: 'Krona One', sans-serif;
+ }
+
+
+p {
+    color: black;
+    font-size: 64px;
+    text-align: left;
+    font-family: 'Krona One', sans-serif;
+    margin: 10px;
+}
+
+span {
+	
+	color: red;
+}
+
+
+.info {
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Helvetica', serif;
+}
+
+
+
+  @media (max-width: 400px) {
+  p {
+    
+   font-size: 36px;
+
+  }
+
+    @media (max-width: 400px) {
+  .info {
+    
+   font-size: 14px;
+
+  }
+}/* Your styles go here *//* Your styles go here */

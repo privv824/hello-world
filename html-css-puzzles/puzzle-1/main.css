@@ -1,0 +1,19 @@
+/* Your styles go here */
+body {
+  
+}
+
+
+.box {
+	background-color: #d0cdcd;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: sans-serif;
+}
