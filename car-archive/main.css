@@ -1,23 +1,9 @@
 body {
-	background: white;
+	background: black;
 	border: 0px;
-	margin: 90px;
+	margin: 100px;
 	padding: 0px;
 }
-
-.main {
-	font-size: 40px;
-	font-family: 'arial';
-	color: #white;
-	text-align: center;
-	position: fixed; 
-	top: 10%;
-    left: 50%;
-     
-}
-
-
-
 .images{
 	text-align: center;
 }
