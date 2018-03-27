@@ -1,0 +1,34 @@
+body {
+	background: white;
+	border: 0px;
+	margin: 90px;
+	padding: 0px;
+}
+
+.main {
+	font-size: 40px;
+	font-family: 'arial';
+	color: #white;
+	text-align: center;
+	position: fixed; 
+	top: 10%;
+    left: 50%;
+     
+}
+
+
+
+.images{
+	text-align: center;
+}
+
+.image {
+    display: inline-block;
+	width:20%;
+	height:10%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
