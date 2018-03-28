@@ -1,7 +1,7 @@
 body {
 	background: black;
 	border: 0px;
-	margin: 100px;
+	margin: 10px;
 	padding: 0px;
 }
 .images{
@@ -10,8 +10,8 @@ body {
 
 .image {
     display: inline-block;
-	width:20%;
-	height:10%;
+	width:40%;
+	height:30%;
 }
 
 img {
@@ -22,22 +22,3 @@ img {
 	color: white;
 }
 
-#fadeimage {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-
-#fadeimage img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#cf img.top:hover {
-  opacity:0;
-}
