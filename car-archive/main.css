@@ -18,7 +18,36 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.categories{
+.decade{
 	color: white;
+	text-align: center;
+	font-size: 30px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
 }
 
+.decade div {
+	display: inline-block;
+	position: fixed;
+}
+
+.image {
+	position: relative;
+}
+
+.image a:hover .show-on-hover {
+	display: block;
+}
+
+.show-on-hover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+}
