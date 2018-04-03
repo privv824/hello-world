@@ -41,7 +41,7 @@ img {
 	position: relative;
 }
 
-.image a:hover .show-on-hover {
+.image {
 	display: block;
 }
 
@@ -53,3 +53,15 @@ img {
 	color: white;
 }
 
+.info{
+	color: white;
+	text-align:center;
+	font-size: 25px;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
