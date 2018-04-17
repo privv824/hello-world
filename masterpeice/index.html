@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html class="animsition">
 <head>
-  
+<link rel="icon" href="images/1.png" type="image/png" sizes="32x32">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Masks of Les Demoiselles d'Avignon</title>
+  <title>The Masks</title>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Architects Daughter" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
 
 <!-- <div class="box-button"></div>
 <div class="box"></div>
@@ -27,21 +31,101 @@
 
 <br>
 
-<div class="content">
-  <a href="creation.html"><img class="home-lips" src="photos/thecreation.jpg" /></a>
+<style>
+ img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+</style>
+<img src="photos/thecreation.jpg" alt="Creation" style="width:95%; height:100%;">
+<img src="photos/american.jpg" alt="American" style="width:40%; height:100%;">
+<img src="photos/thebirth.jpg" alt="Birth" style="width:100%; height:100%;">
+<img src="photos/mona.jpg" alt="Mona" style="width:35%; height:100%;">
+<img src="photos/girl.jpg" alt="Girl" style="width:35%; height:100%;">
 
-<div class="content">
-  <a href="american.html"><img class="home-lips" src="photos/american.jpg" /></a>
+<div class="draggable">
+<div class="mask">
+<img src="photos/picasso-mask1.png" id="draggable-mask" dra/>
+</div>
+</div>
 
-<div class="content">
-  <a href="thebirth.html"><img class="home-lips" src="photos/thebirth.jpg" /></a>
-
-<div class="content">
-  <a href="mona.html"><img class="home-lips" src="photos/mona.jpg" /></a>
-
-<div class="content">
-  <a href="girl.html"><img class="home-lips" src="photos/girl.jpg" /></a>
+<div class="draggable">
+<div class="mask">
+<img src="photos/picasso-mask2.png" id="draggable-mask" dra/>
+</div>
+</div>
+</div>
           
+<div class="draggable">
+<div class="mask">
+<img src="photos/picasso-american1.png" id="draggable-mask" dra/>
+</div>
+</div>
+
+<dic class="draggable">
+<div class="mask">
+<img src="photos/picasso-american2.png" id="draggable-mask" dra/>
+</div>
+</div>
+
+<div class="draggable">
+<div class="mask">
+<img src="photos/picasso-thebirth1.png" id="draggable-mask" dra/>
+</div>
+</div>
+
+<dic class="draggable">
+<div class="mask">
+<img src="photos/picasso-thebirth2.png" id="draggable-mask" dra/>
+</div>
+</div>
+
+<div class="draggable">
+<div class="mask">
+<img src="photos/picasso-girl1.png" id="draggable-mask" dra/>
+</div>
+</div>
+
+<dic class="draggable">
+<div class="mask">
+<img src="photos/picasso-girl2.png" id="draggable-mask" dra/>
+</div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script>
+var $draggable = $('.draggable').draggabilly({
+  // options...
+})
+</script>
+
+
 </div>
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
