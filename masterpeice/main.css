@@ -70,10 +70,7 @@ h1 {
 
 
 
-@keyframes shake {
-  10%, 90% {
-  
-}
+ 
 
 a {
     margin: 0;
@@ -111,7 +108,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 1000px) {
-    .poplip {
+    .mask {
         margin-left: -190px!important;
         margin-top: -150px!important;
     }
@@ -121,7 +118,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 5vh;
-    background-color: black;
+    background-color: white;
     bottom: 0;
     left: 0;
     transition: all .25s ease;
