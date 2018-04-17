@@ -1,0 +1,185 @@
+html, body {
+    
+    height: 100%;
+    margin: 0;
+    outline: none;
+}
+
+html:focus, body:focus {
+    outline: none;
+}
+
+
+body { 
+  background-color: #pink;
+  font-family: 'Helvetica', serif;
+ 
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: luminosity;
+  /*overflow: hidden;*/
+
+}
+
+
+h1 {
+    color: white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Comic Sans MS', serif;
+    font-weight: bolder;
+    background-color: black;
+    }
+
+/*.content{
+    margin-top: 15vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow:  row wrap;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}*/
+
+.content {
+    text-align: center;
+}
+
+.title {
+	display: block;
+	text-align: center;
+    width: 65vw;
+	height: 10vw;
+	position: relative;
+    top: 5%;
+    left: 15%;
+}
+
+
+
+
+
+
+
+
+@keyframes shake {
+  10%, 90% {
+  
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    transition: all .25s ease;
+    color: black;
+}
+
+a:hover {
+    color: crimson;
+}
+
+.bg-celeb {
+    width: 100%;
+}
+
+.poplip {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    /*margin-left: -100.53px;
+    margin-top: -85.93px;*/
+    z-index: 10;
+    
+    
+}
+
+#draggable-mask {
+    z-index: 9;
+    cursor: move!important;
+}
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .poplip {
+        margin-left: -190px!important;
+        margin-top: -150px!important;
+    }
+}
+
+.bottom-bar {
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: all .25s ease;
+}
+
+.prev-link {
+    position: fixed;
+    bottom: 1%;
+    left: 3%;
+}
+
+.next-link {
+    position: fixed;
+    bottom: 1%;
+    right: 3%;
+}
+
+.home-link {
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.reveal {
+    height: 40vh!important;
+}
+
+.reveal-content {
+    position: fixed;
+    width: 90%;
+    bottom: 3%;
+    left: 4%;
+    opacity: 0;
+    transition: all .25s ease;
+}
+
+.content-revealed {
+    opacity: 1!important;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    transform: translateX(-50px);
+    transition: all .5s ease;
+}
+
+.box-button {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+.open {
+    transform: translateX(0px)!important;
+}
+
+
+}
