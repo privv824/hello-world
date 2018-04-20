@@ -33,13 +33,6 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
-}
 
-.caption {
-	font-size: 17px;
-	font-family: "Courier", sans-serif;
-	color: black;
-	text-align: center;
-	position: fixed;
 
 }
