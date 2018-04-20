@@ -1,0 +1,36 @@
+/* Your styles go here */
+body {
+	background: white;
+	border: 0px;
+	margin: 90px;
+	padding: 0px;
+}
+
+.main {
+	font-size: 40px;
+	font-family: 'Volkron';
+	color: #black;
+	text-align: center;
+	position: fixed; 
+	top: 10%;
+    left: 50%;
+     transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+
+
+.photos{
+	text-align: center;
+}
+
+.photo {
+    display: inline-block;
+	width:20%;
+	height:10%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
