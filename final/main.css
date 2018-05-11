@@ -1,0 +1,29 @@
+ #theguide {
+    
+    padding: 40px;
+    background: url(photos/theguide.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: left;
+
+ }
+
+h1 {
+    font-family: 'Roboto';font-size: 100px;
+    color: black;
+}
+
+    
+h2{ 
+    font-family: 'Roboto';font-size: 25px;
+    color: white;
+    font-size:  
+}
+
+ #lowerguide {
+    
+    padding: 40px;
+    background: url(photos/lowerguide.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: left;
